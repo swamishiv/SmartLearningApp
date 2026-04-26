@@ -1,15 +1,47 @@
 [
   {
     "ContainingType": "SmartLearningAPI.Controllers.AuthController",
-    "Method": "Login",
-    "RelativePath": "api/Auth/login",
+    "Method": "CreateUser",
+    "RelativePath": "api/Auth/CreateUser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
+        "Name": "user",
+        "Type": "SmartLearningAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartLearningAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
         "Type": "SmartLearningAPI.DTO.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartLearningAPI.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SmartLearningAPI.DTO.RegisterDto",
         "IsRequired": true
       }
     ],

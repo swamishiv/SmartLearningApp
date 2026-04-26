@@ -1,5 +1,6 @@
 ﻿using SmartLearningAPI.DTO;
 using SmartLearningAPI.Helpers;
+using SmartLearningAPI.Models;
 using SmartLearningAPI.Repository;
 
 namespace SmartLearningAPI.Services
@@ -8,29 +9,67 @@ namespace SmartLearningAPI.Services
     {
         private readonly IStudentRepository _studentRepository;
         private readonly JwtService _jwtService;
+        private readonly IUserRepository _userRepository;
 
-        public AuthService(IStudentRepository studentRepository, JwtService jwtService)
+        public AuthService(IStudentRepository studentRepository, JwtService jwtService, IUserRepository userRepository)
         {
             _studentRepository = studentRepository;
             _jwtService = jwtService;
+            _userRepository = userRepository;
         }
 
-        public string Login(LoginModel model)
+        //public string Login(LoginModel model)
+        //{
+        //    // 1. Get user
+        //    var student = _studentRepository.GetByEmail(model.Email);
+
+        //    if (student == null)
+        //        return null;
+
+        //    // 2. Verify password
+        //    bool isValid = PasswordHelper.VerifyPassword(model.Password, student.Password);
+
+        //    if (!isValid)
+        //        return null;
+
+        //    // 3. Generate JWT
+        //    return _jwtService.GenerateToken(student);
+        //}
+
+
+
+        // ✅ Login
+        public User Login(LoginModel dto)
         {
-            // 1. Get user
-            var student = _studentRepository.GetByEmail(model.Email);
+            return _userRepository.GetUserByEmailAndPassword(dto.Email, dto.Password);
+        }
+        // ✅ Register (Student only)
+        public void Register(RegisterDto dto)
+        {
+            dto.Password = PasswordHelper.HashPassword(dto.Password);
+            var user = new User
+            {
+                FullName = dto.FullName,
+                Email = dto.Email,
+                Password = dto.Password,
+                RoleCode = "STU",
+                CreatedDate = DateTime.Now
+            };
 
-            if (student == null)
-                return null;
+            _userRepository.AddUser(user);
+        }
 
-            // 2. Verify password
-            bool isValid = PasswordHelper.VerifyPassword(model.Password, student.Password);
+        // ✅ Admin creates Teacher/Admin
+        public void CreateUser(User user, string currentRole)
+        {
+            if (currentRole != "ADM")
+                throw new Exception("Only admin can create users");
 
-            if (!isValid)
-                return null;
+            user.Password = PasswordHelper.HashPassword(user.Password);
+            user.CreatedDate = DateTime.Now;
 
-            // 3. Generate JWT
-            return _jwtService.GenerateToken(student);
+            _userRepository.AddUser(user);
+        
         }
     }
 }

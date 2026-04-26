@@ -14,5 +14,6 @@ namespace SmartLearningAPI.Models
         public string Password { get; set; }
 
         public DateTime CreatedDate { get; set; }
+
     }
 }

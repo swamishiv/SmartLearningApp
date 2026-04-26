@@ -1,27 +1,54 @@
 import axios from "axios";
 
-// 🔗 Base URL of .NET API
+let setLoadingGlobal;
+
+export const setLoader = (loaderFn) => {
+  setLoadingGlobal = loaderFn;
+};
+
 const axiosInstance = axios.create({
-    baseURL: "https://localhost:7243/api", // change port if needed
-    headers: {
-        "Content-Type": "application/json"
-    }
+  baseURL: "https://localhost:7243/api", // ✅ correct
 });
 
-// 🔐 Automatically attach JWT token
+// 🔐 REQUEST INTERCEPTOR
 axiosInstance.interceptors.request.use(
-    (config) => {
-        const token = localStorage.getItem("token");
+  (config) => {
 
-        if (token) {
-            config.headers.Authorization = `Bearer ${token}`;
-        }
+    // ⏳ start loader
+    if (setLoadingGlobal) setLoadingGlobal(true);
 
-        return config;
-    },
-    (error) => {
-        return Promise.reject(error);
+    // ✅ only attach token if exists
+    const token = localStorage.getItem("token");
+
+    // ❗ Skip token for login API (SAFE CHECK)
+    if (token && !config.url?.includes("login")) {
+      config.headers.Authorization = `Bearer ${token}`;
     }
+
+    return config;
+  },
+  (error) => {
+    if (setLoadingGlobal) setLoadingGlobal(false);
+    return Promise.reject(error);
+  }
+);
+
+// 🚫 RESPONSE INTERCEPTOR
+axiosInstance.interceptors.response.use(
+  (response) => {
+    if (setLoadingGlobal) setLoadingGlobal(false);
+    return response;
+  },
+  (error) => {
+    if (setLoadingGlobal) setLoadingGlobal(false);
+
+    if (error.response?.status === 401) {
+      localStorage.clear();
+      window.location.href = "/";
+    }
+
+    return Promise.reject(error);
+  }
 );
 
 export default axiosInstance;

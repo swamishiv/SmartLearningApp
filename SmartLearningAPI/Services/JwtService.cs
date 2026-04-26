@@ -15,33 +15,34 @@ namespace SmartLearningAPI.Services
             _configuration = configuration;
         }
 
-        public string GenerateToken(Student student)
+        public string GenerateToken(User user) // ✅ changed
         {
-            // 1. Create claims (data inside token)
+            // 1. Create claims
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, student.Email),
-                new Claim(ClaimTypes.NameIdentifier, student.Id.ToString())
+                new Claim(ClaimTypes.Name, user.Email),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim("RoleCode", user.RoleCode) // ✅ IMPORTANT
             };
 
-            // 2. Get secret key from appsettings.json
+            // 2. Secret key
             var key = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])
             );
 
-            // 3. Create signing credentials (algorithm + key)
+            // 3. Credentials
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            // 4. Create JWT token
+            // 4. Token
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddHours(1),
+                expires: DateTime.Now.AddHours(2),
                 signingCredentials: creds
             );
 
-            // 5. Convert token to string
+            // 5. Return token string
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }

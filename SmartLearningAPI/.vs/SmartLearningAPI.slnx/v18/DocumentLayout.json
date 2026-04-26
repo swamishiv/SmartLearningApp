@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\shiv\\Projects\\SmartLearningAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\repository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:repository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +15,8 @@
       "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|c:\\shiv\\projects\\smartlearningapi\\dto\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4674DA4-2B7D-DCFC-A46F-72CF4F07481F}|SmartLearningAPI.csproj|solutionrelative:dto\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,135 +31,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T16:09:39.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Repository\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\StudentRepository.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Repository\\StudentRepository.cs",
-              "RelativeToolTip": "Repository\\StudentRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwA8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T14:22:29.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Repository\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IStudentRepository.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Repository\\IStudentRepository.cs",
-              "RelativeToolTip": "Repository\\IStudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T14:22:15.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwCAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T13:52:09.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T13:45:52.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\IStudentService.cs",
-              "RelativeDocumentMoniker": "Services\\IStudentService.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\IStudentService.cs",
-              "RelativeToolTip": "Services\\IStudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T14:26:25.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwDoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T13:42:14.973Z"
+              "WhenOpened": "2026-04-26T17:03:16.615Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T13:57:13.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "Services\\JwtService.cs",
               "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\JwtService.cs",
               "RelativeToolTip": "Services\\JwtService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwCcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T13:40:32.248Z"
+              "WhenOpened": "2026-04-25T18:15:21.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "Services\\StudentService.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\StudentService.cs",
-              "RelativeToolTip": "Services\\StudentService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAIA9wD4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T14:26:24.663Z"
+              "WhenOpened": "2026-04-25T18:09:21.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\DTO\\LoginModel.cs",
-              "RelativeDocumentMoniker": "DTO\\LoginModel.cs",
-              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\DTO\\LoginModel.cs",
-              "RelativeToolTip": "DTO\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\shiv\\Projects\\SmartLearningAPI\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwEgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T13:34:44.86Z"
+              "WhenOpened": "2026-04-25T18:08:12.16Z",
+              "EditorCaption": ""
             }
           ]
         }

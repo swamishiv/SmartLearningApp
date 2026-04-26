@@ -266,3 +266,4 @@ C:\shiv\Projects\SmartLearningAPI\obj\Debug\net10.0\refint\SmartLearningAPI.dll
 C:\shiv\Projects\SmartLearningAPI\obj\Debug\net10.0\SmartLearningAPI.pdb
 C:\shiv\Projects\SmartLearningAPI\obj\Debug\net10.0\SmartLearningAPI.genruntimeconfig.cache
 C:\shiv\Projects\SmartLearningAPI\obj\Debug\net10.0\ref\SmartLearningAPI.dll
+C:\shiv\Projects\SmartLearningAPI\obj\Debug\net10.0\SmartLearningAPI.sourcelink.json

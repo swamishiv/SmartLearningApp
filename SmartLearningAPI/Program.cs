@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SmartLearningAPI.DATA;
+using SmartLearningAPI.Helpers;
 using SmartLearningAPI.Repository;
 using SmartLearningAPI.Services;
 using System.Text;
@@ -19,6 +20,7 @@ builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -71,5 +73,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+//    DataSeeder.SeedAdmin(context);
+//}
 
 app.Run();
